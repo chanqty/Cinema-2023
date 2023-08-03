@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:responsive='true' expr:dir='data:blog.languageDirection' lang='en-US' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+ <head>
+ <meta content='width=device-width, initial-scale=1' name='viewport'/>
+  <b:include data='blog' name='all-head-content'/>
+  <title><data:blog.pageTitle/></title>
+  <b:skin><![CDATA[
+
+     body{background:#fff}
+
+   ]]></b:skin>
+   </head>
+   <body>
+   <b:section class='main' id='main' showaddelement='yes'>
+     <b:widget id='HTML3' locked='false' title='' type='HTML'>
+       <b:widget-settings>
+         <b:widget-setting name='content'>&lt;!doctype html&gt;
+
+
+  &lt;style&gt;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; /* Align at the center both vertically and horizontally */
+      min-height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .title-container {
+      text-align: center;
+      width: 100%;
+    }
+
+    .title {
+      font-family: &#39;Poppins&#39;, sans-serif;
+      font-weight: bold;
+      font-size: 6vw;
+      color: #ff5555;
+      margin-bottom: 20px;
+    }
+  &lt;/style&gt;
+  &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Poppins:wght@700&amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+
+
+  &lt;div class=&quot;title-container&quot;&gt;
+    &lt;div class=&quot;title&quot;&gt;Free Movie and TV Shows App&lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/!doctype&gt;</b:widget-setting>
+       </b:widget-settings>
+       <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+     </b:widget>
+     <b:widget id='HTML2' locked='false' title='' type='HTML'>
+       <b:widget-settings>
+         <b:widget-setting name='content'>&lt;!doctype html&gt;
+
+
+  
+  
+  &lt;style&gt;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .slider {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slide {
+      width: 100%;
+      display: none;
+      position: relative;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border: 2px solid rgba(0, 255, 255, 0.8);
+      animation: neon-border 1.5s alternate infinite;
+    }
+
+    .slide.active img {
+      border-color: rgba(0, 255, 255, 0);
+    }
+
+    @keyframes neon-border {
+      0% {
+        border-color: rgba(0, 255, 255, 0.8);
+      }
+      100% {
+        border-color: rgba(0, 255, 255, 0);
+      }
+    }
+
+    .scroll-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 20px;
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .left {
+      left: 10px;
+    }
+
+    .right {
+      right: 10px;
+    }
+  &lt;/style&gt;
+
+
+  &lt;div class=&quot;slider&quot;&gt;
+    &lt;button class=&quot;scroll-button left&quot;&gt;&#9668;&lt;/button&gt;
+    &lt;div class=&quot;slide active&quot;&gt;
+      &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQTzu1BrvJ-cYGMFTWSyYUjKPwHFmg5tgzK5NBD_DBRWBgKKwAyQ4ER8PIjQCllx0Kx9phUKf2JQQ8I3jhrxZZaH4dcqQjQcoB-Hi7SJi21GKjdj0xr6AzR13qJV4wgO9VmQb1q79hLk3mztVsUzRzILsrfcBI-Z6tv4fNMbu9VVRZ3uqazlGsZYHabDAn/s750/banner1004-9.jpg&quot; alt=&quot;Image 1&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;slide&quot;&gt;
+      &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWbCXKLS08LA6E-24dI7_AmgADdeaQC-nybR7niYDOtbapoP8X3LNf52Cgl1kA1U_BddSbPa7iHkxxaFDyBOJyLHFs8b6aRveseXT90NxLkRg7v4IlNFMqzTe9TtRBMdGLj2NffuanBAIa5TPXzN0SnaTqSydq5qCHmPdePY5fI5it7CXoZvjzn9-JtM1X/s750/banner1004-8.jpg&quot; alt=&quot;Image 2&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;slide&quot;&gt;
+      &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKl_T2DvY4psKOxQ370wl7FzI2-KGVH6S7pw-92mOXx-Tl6AALtybddBPknQRtHgM9k-iR931NPPdcskXavJDHqO9C4SfgzI3KVl2nCY6rK_DU1SSnpkx41KwS85hDvrNCf5RjuAUHuxCgP9OWwA5x0QQEhqpHkJc1XEBFItBo4Z6bX0mtHiWwSfhGWUAR/s750/banner1004-7.jpg&quot; alt=&quot;Image 3&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;slide&quot;&gt;
+      &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0LSOzIjdcUWAbCyTcNG5Xu5p0rT8d4GftP4Bwa62yN9tMw7F2bInsz8TKj_xmVbPyMZqAvTPD8URRjt3TZJUIkhYuTOqpEVuN53UgnYd_ZnVK5ksV4VCIYzQ4ABAwq67RDFbELK5hzWrwY7FVw8Sb9mTJVvH4AsAQbSBhawlDKt1dC1I6-W05U376zHLn/s750/banner1004-6.jpg&quot; alt=&quot;Image 4&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;slide&quot;&gt;
+      &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilJEmbHHxSSckJ6jfJ5qnzI2DebUFJXJP0MSJ4u0JRh9poz4wG3XjEbLCYxsFqRXu9vaENFqIhVhht7j31Rb25q_OSQct7mvvKZATwcYMXKgBOcPPJg8E3ZVkEcWX8YEJuXnqElBaoo3LqJQy2yIdxByETJ_i0XkdKKnxvgDebTxFqwBOKg1uJNEPnefV0/s750/banner1004-5.jpg&quot; alt=&quot;Image 5&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;slide&quot;&gt;
+      &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3gz2wXhxpXj7YC17vOndzGGTbZuyxCgHMw2325UPpedm826LLw_x-BJA3Wiw0at14_7bC7OJf5-lj8V0zQ6FFq9vGfQVFMGJ_Hq1ke_Zb785RVfeljSJKb0Ya6_Zj04YCpx28ZBjgph3opcGRjv1AJzpmNw_WAvny5iZ_CDLddz2yt8c0dOJZ3HMMGvMR/s320/banner1004-4.jpg&quot; alt=&quot;Image 6&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;slide&quot;&gt;
+      &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsGfDqsFgY-Kw3ZFjUDnsxb3QmBzQLYSKmd7yumBde_qaB9HBC4tBKe58t7RVzcei_bATbLZHVW82L8_n4coHgb-MDdHjSSeBvkxnQzBYNzwOn6AXw5FitqPEJ5huurEldF9s42HEO-jQhcLuaLQI6TmceNYULaNQrc_WW0WzaerDTKHRA_Zamn6sh2Fl7/s750/banner1004-3.jpg&quot; alt=&quot;Image 7&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;slide&quot;&gt;
+      &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJtoQN0mYJt0rJo785NTlB6xl-5SdTEwBuJ6DStQpTUJ8NgSufhlInHFlIpH_Fv0MlCdeFFe1ScvVu08-EBtIjex17W6RNl0b8fG8KRIx2a75bkStxO-56WxDdkCoVFC4XgBDcLbAYGiJSA0cpNTt9QeYAAKzX2ZoqWBihzo31-AOdyvMocq03iBgGwNcv/s320/banner1004-1.jpg&quot; alt=&quot;Image 8&quot; /&gt;
+    &lt;/div&gt;
+    &lt;button class=&quot;scroll-button right&quot;&gt;&#9658;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;script&gt;
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(&#39;.slide&#39;);
+
+    function showSlide(index) {
+      slides[currentIndex].classList.remove(&#39;active&#39;);
+      slides[currentIndex].style.display = &#39;none&#39;;
+      slides[index].style.display = &#39;block&#39;;
+      slides[index].classList.add(&#39;active&#39;);
+      currentIndex = index;
+    }
+
+    function nextSlide() {
+      let newIndex = (currentIndex + 1) % slides.length;
+      showSlide(newIndex);
+    }
+
+    setInterval(nextSlide, 3000);
+    showSlide(0);
+
+    document.querySelector(&#39;.left&#39;).addEventListener(&#39;click&#39;, () =&gt; {
+      let newIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(newIndex);
+    });
+
+    document.querySelector(&#39;.right&#39;).addEventListener(&#39;click&#39;, () =&gt; {
+      let newIndex = (currentIndex + 1) % slides.length;
+      showSlide(newIndex);
+    });
+  &lt;/script&gt;
+
+&lt;/!doctype&gt;</b:widget-setting>
+       </b:widget-settings>
+       <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+     </b:widget>
+     <b:widget id='HTML1' locked='false' title='' type='HTML'>
+       <b:widget-settings>
+         <b:widget-setting name='content'>&lt;!doctype html&gt;
+
+
+  
+  &lt;style&gt;
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: url(&#39;https://cdn.pixabay.com/photo/2017/12/09/20/03/space-3009941_960_720.jpg&#39;) fixed;
+      background-size: cover;
+      font-family: &#39;Roboto&#39;, sans-serif;
+      transition: background-color 0.3s ease-in-out;
+      color: #333;
+    }
+
+    .container {
+      position: relative;
+      width: 90%;
+      max-width: 400px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      transition: background-color 0.3s ease-in-out;
+      margin: 0 auto;
+    }
+
+    .glow-button {
+      width: 100%;
+      border: none;
+      border-radius: 15px;
+      font-size: 5vw;
+      font-family: &#39;Pacifico&#39;, cursive;
+      padding: 8px 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 4vh;
+      transition: background-color 0.3s ease-in-out;
+      background-image: linear-gradient(45deg, #FF8C00, #FF0080, #FF69B4, #1E90FF, #00FF7F, #00CED1);
+      color: #fff;
+    }
+
+    .glow-button::before {
+      content: &quot;&quot;;
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      border-radius: 20px;
+      background-image: linear-gradient(45deg, #FF8C00, #FF0080, #FF69B4, #1E90FF, #00FF7F, #00CED1);
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      animation: neon-animation 5s linear infinite;
+    }
+
+    .glow-button:hover::before {
+      opacity: 1;
+    }
+
+    .icon {
+      font-size: 10vw;
+      margin-right: 3vw;
+    }
+
+    h1 {
+      font-size: 8vw;
+      margin-bottom: 3vh;
+      font-family: &#39;Pacifico&#39;, cursive;
+    }
+
+    .dark-mode-button {
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 3vh 4vw;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: &#39;Pacifico&#39;, cursive;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      position: relative;
+      z-index: 1;
+    }
+
+    .dark-mode-button:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .dark-mode-switch {
+      display: inline-block;
+      width: 10vw;
+      height: 4vh;
+      background-color: #ccc;
+      position: relative;
+      border-radius: 17px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .dark-mode-switch:before {
+      content: &#39;&#39;;
+      position: absolute;
+      width: 5vw;
+      height: 5vw;
+      border-radius: 50%;
+      background-color: #fff;
+      top: 50%;
+      left: 2px;
+      transform: translateY(-50%);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .dark-mode-switch.checked {
+      background-color: #009688;
+    }
+
+    .dark-mode-switch.checked:before {
+      transform: translateX(calc(100% - 7px));
+    }
+
+    .footer {
+      margin-top: 5vh;
+      font-size: 4vw;
+      color: #555;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1vw;
+      position: relative;
+      z-index: 0;
+    }
+
+    .footer-button {
+      background-color: #009688;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 2vh 3vw;
+      cursor: pointer;
+      font-family: &#39;Pacifico&#39;, cursive;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .footer-button:hover {
+      background-color: #00796b;
+    }
+
+    .date-time {
+      font-size: 4vw;
+      margin-top: 3vh;
+      font-family: &#39;Pacifico&#39;, cursive;
+    }
+
+    @keyframes neon-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+
+    /* Desktop responsive */
+    @media only screen and (min-width: 1200px) {
+      .container {
+        max-width: 600px;
+        padding: 40px;
+      }
+    }
+  &lt;/style&gt;
+  &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Pacifico&amp;amp;family=Roboto:wght@400;700&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+
+
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;h1&gt;APP&#39;s Official Website&lt;/h1&gt;
+    &lt;a class=&quot;glow-button&quot; href=&quot;https://share.sf86vuwx.com/sharex/cinemaen/index_fb1013.html&quot; target=&quot;_blank&quot;&gt;
+      &lt;span class=&quot;icon&quot;&gt;&amp;#x1F4E5;&lt;/span&gt;
+      &lt;span&gt;Download Official App&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;dark-mode-button&quot; onclick=&quot;toggleDarkMode()&quot;&gt;
+      &lt;span class=&quot;dark-mode-switch&quot;&gt;&lt;/span&gt;
+      &lt;span&gt;Toggle Dark Mode&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;date-time&quot; id=&quot;date-time&quot;&gt;
+      &lt;!-- Current time and date will be displayed here --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;footer&quot;&gt;
+    &lt;button class=&quot;footer-button&quot;&gt;Contact Us&lt;/button&gt;
+    &amp;copy; 2023 Cinema
+  &lt;/div&gt;
+  &lt;script&gt;
+    const glowButton = document.querySelector(&#39;.glow-button&#39;);
+    const darkModeButton = document.querySelector(&#39;.dark-mode-switch&#39;);
+    const container = document.querySelector(&#39;.container&#39;);
+    const colors = [&#39;#FF8C00&#39;, &#39;#FF0080&#39;, &#39;#FF69B4&#39;, &#39;#1E90FF&#39;, &#39;#00FF7F&#39;, &#39;#00CED1&#39;];
+    let colorIndex = 0;
+
+    function changeColor() {
+      glowButton.style.backgroundImage = `linear-gradient(45deg, ${colors[colorIndex]}, ${colors[(colorIndex + 1) % colors.length]})`;
+      colorIndex = (colorIndex + 1) % colors.length;
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle(&#39;dark-mode&#39;);
+      container.classList.toggle(&#39;dark-mode&#39;);
+      darkModeButton.classList.toggle(&#39;checked&#39;);
+    }
+
+    setInterval(changeColor, 5000);
+
+    function updateDateTime() {
+      const now = new Date();
+      const options = { weekday: &#39;long&#39;, year: &#39;numeric&#39;, month: &#39;long&#39;, day: &#39;numeric&#39;, hour: &#39;2-digit&#39;, minute: &#39;2-digit&#39;, second: &#39;2-digit&#39;, timeZoneName: &#39;short&#39; };
+      const formattedDateTime = now.toLocaleDateString(&#39;en-US&#39;, options);
+      document.getElementById(&#39;date-time&#39;).textContent = formattedDateTime;
+    }
+
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+  &lt;/script&gt;
+
+&lt;/!doctype&gt;</b:widget-setting>
+       </b:widget-settings>
+       <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+     </b:widget>
+   </b:section>
+   </body>
+</html>
